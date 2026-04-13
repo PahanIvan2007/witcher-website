@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-home',
@@ -21,10 +22,10 @@ import { RouterModule } from '@angular/router';
         <circle cx="100" cy="80" r="8" fill="#0a0a0a"/>
       </svg>
       <div class="hero-content">
-        <h1 class="hero-title">Ведьмак</h1>
+        <h1 class="hero-title">{{ tr.t('home.title') }}</h1>
         <p class="subtitle">The Witcher</p>
         <p class="tagline">CD PROJEKT RED presents</p>
-        <a routerLink="/characters" class="btn-cdpr">Исследовать</a>
+        <a routerLink="/characters" class="btn-cdpr">{{ tr.t('home.explore') }}</a>
       </div>
       <div class="scroll-indicator">
         <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="white"/></svg>
@@ -32,27 +33,27 @@ import { RouterModule } from '@angular/router';
     </section>
 
     <section class="quote-section">
-      <p class="quote-text">"Зло — это то, что творят люди. Чудовища существуют лишь для того, чтобы это зло уничтожать."</p>
-      <p class="quote-author">— Геральт из Ривии</p>
+      <p class="quote-text">{{ tr.t('home.quote') }}</p>
+      <p class="quote-author">— {{ tr.t('home.quoteAuthor') }}</p>
     </section>
 
     <section class="quick-nav">
       <div class="container">
         <div class="quick-nav-grid">
           <a routerLink="/characters" class="quick-nav-card">
-            <h3>Персонажи</h3>
+            <h3>{{ tr.t('nav.characters') }}</h3>
             <p>Главные герои саги</p>
           </a>
           <a routerLink="/schools" class="quick-nav-card">
-            <h3>Школы</h3>
+            <h3>{{ tr.t('nav.schools') }}</h3>
             <p>Школы ведьмаков</p>
           </a>
           <a routerLink="/gallery" class="quick-nav-card">
-            <h3>Галерея</h3>
+            <h3>{{ tr.t('nav.gallery') }}</h3>
             <p>Изображения и арты</p>
           </a>
           <a routerLink="/gwent" class="quick-nav-card gwent-card">
-            <h3>Гвинт</h3>
+            <h3>{{ tr.t('nav.gwent') }}</h3>
             <p>Карточная игра</p>
           </a>
         </div>
@@ -95,4 +96,6 @@ import { RouterModule } from '@angular/router';
     @media (max-width: 992px) { .hero-title { font-size: 60px; letter-spacing: 10px; } }
   `]
 })
-export class HomeComponent {}
+export class HomeComponent {
+  tr = inject(TranslationService);
+}

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TranslationService } from './services/translation.service';
 
 @Component({
   selector: 'app-root',
@@ -34,14 +35,18 @@ import { CommonModule } from '@angular/common';
           </button>
           <nav [class.active]="mobileMenuOpen">
             <ul>
-              <li><a routerLink="/characters" (click)="mobileMenuOpen = false">Персонажи</a></li>
-              <li><a routerLink="/schools" (click)="mobileMenuOpen = false">Школы</a></li>
-              <li><a routerLink="/gallery" (click)="mobileMenuOpen = false">Галерея</a></li>
-              <li><a routerLink="/timeline" (click)="mobileMenuOpen = false">История</a></li>
-              <li><a routerLink="/games" (click)="mobileMenuOpen = false">Игры</a></li>
-              <li><a routerLink="/gwent" (click)="mobileMenuOpen = false">Гвинт</a></li>
+              <li><a routerLink="/characters" (click)="mobileMenuOpen = false">{{ tr.t('nav.characters') }}</a></li>
+              <li><a routerLink="/schools" (click)="mobileMenuOpen = false">{{ tr.t('nav.schools') }}</a></li>
+              <li><a routerLink="/gallery" (click)="mobileMenuOpen = false">{{ tr.t('nav.gallery') }}</a></li>
+              <li><a routerLink="/timeline" (click)="mobileMenuOpen = false">{{ tr.t('nav.timeline') }}</a></li>
+              <li><a routerLink="/games" (click)="mobileMenuOpen = false">{{ tr.t('nav.games') }}</a></li>
+              <li><a routerLink="/gwent" (click)="mobileMenuOpen = false">{{ tr.t('nav.gwent') }}</a></li>
             </ul>
           </nav>
+
+          <button class="lang-switch" (click)="tr.toggleLang()">
+            {{ tr.currentLang() === 'ru' ? 'EN' : 'RU' }}
+          </button>
         </div>
       </div>
     </header>
@@ -63,9 +68,9 @@ import { CommonModule } from '@angular/common';
               </defs>
               <text x="0" y="40" fill="url(#footerLogoGrad)" font-family="Oswald, sans-serif" font-size="30" font-weight="700">ВЕДЬМАК</text>
             </svg>
-            <p class="footer-tagline">GOGOL' STUDIO 2026</p>
+            <p class="footer-tagline">{{ tr.t('footer.tagline') }}</p>
           </div>
-          <div class="footer-copyright">© 2026 CD PROJEKT RED. Все права защищены.</div>
+          <div class="footer-copyright">{{ tr.t('footer.copyright') }}</div>
         </div>
       </div>
     </footer>
@@ -91,6 +96,9 @@ import { CommonModule } from '@angular/common';
     nav a { color: var(--cdpr-white); text-decoration: none; font-family: 'Oswald', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; opacity: 0.7; transition: all 0.3s; }
     nav a:hover { opacity: 1; color: var(--cdpr-red); }
 
+    .lang-switch { background: transparent; border: 1px solid var(--cdpr-red); color: var(--cdpr-red); padding: 5px 12px; font-family: 'Oswald', sans-serif; font-size: 12px; cursor: pointer; transition: all 0.3s; margin-left: 20px; }
+    .lang-switch:hover { background: var(--cdpr-red); color: var(--cdpr-black); }
+
     .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 10px; }
     .mobile-menu-btn span { display: block; width: 25px; height: 2px; background: var(--cdpr-white); margin: 5px 0; }
 
@@ -111,11 +119,13 @@ import { CommonModule } from '@angular/common';
   `]
 })
 export class AppComponent {
+  tr = inject(TranslationService);
   loaded = false;
   scrolled = false;
   mobileMenuOpen = false;
 
   constructor() {
+    this.tr.init();
     setTimeout(() => { this.loaded = true; }, 500);
     window.addEventListener('scroll', () => { this.scrolled = window.scrollY > 100; });
   }
