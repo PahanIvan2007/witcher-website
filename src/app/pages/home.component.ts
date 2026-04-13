@@ -9,6 +9,8 @@ import { TranslationService } from '../services/translation.service';
   template: `
     <section class="hero">
       <div class="hero-bg"></div>
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
       <div class="hero-particles">
         @for (i of [1,2,3,4,5,6,7,8]; track i) {
           <div class="particle" [class]="'particle-' + i"></div>
@@ -63,6 +65,8 @@ import { TranslationService } from '../services/translation.service';
   styles: [`
     .hero { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
     .hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(222, 20, 0, 0.15) 0%, transparent 50%), radial-gradient(circle at 50% 50%, rgba(222, 20, 0, 0.05) 0%, transparent 70%); }
+    .hero-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('/witcher-website/assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg') center/cover no-repeat; filter: grayscale(50%); opacity: 0.3; }
+    .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.9) 100%); }
     .hero-particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
     .particle { position: absolute; width: 4px; height: 4px; background: #de1400; border-radius: 50%; opacity: 0.3; animation: particleFloat 8s infinite ease-in-out; }
     .particle-1 { left: 10%; top: 20%; } .particle-2 { left: 20%; top: 60%; animation-delay: 1s; } .particle-3 { left: 35%; top: 30%; animation-delay: 2s; } .particle-4 { left: 50%; top: 70%; animation-delay: 0.5s; } .particle-5 { left: 65%; top: 40%; animation-delay: 1.5s; } .particle-6 { left: 80%; top: 25%; animation-delay: 2.5s; } .particle-7 { left: 90%; top: 55%; animation-delay: 3s; } .particle-8 { left: 45%; top: 85%; animation-delay: 0.8s; }
