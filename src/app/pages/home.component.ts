@@ -133,11 +133,11 @@ import { TranslationService } from '../services/translation.service';
 export class HomeComponent {
   tr = inject(TranslationService);
   characters = [
-    { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', image: 'assets/images/a5fb7a948cb613a6db1074e998684cc.jpg' },
-    { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', image: 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&h=500&fit=crop' },
-    { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', image: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop' },
+    { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', image: 'assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg' },
+    { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', image: 'assets/images/h280_39780019.jpg' },
+    { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', image: 'assets/images/a652dcfff029f1f9f5e5e9bf06ee1622.jpg' },
     { id: 4, name: 'Лютик', aka: 'БАРД', image: 'assets/images/i (8).webp' },
     { id: 5, name: 'Эредін', aka: 'КРАСНЫЙ', image: 'assets/images/w1500_49118093.jpg' },
-    { id: 6, name: 'Трисс', aka: 'РЫЖАЯ', image: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=400&h=500&fit=crop' }
+    { id: 6, name: 'Трисс', aka: 'РЫЖАЯ', image: 'assets/images/i (9).webp' }
   ];
 }
