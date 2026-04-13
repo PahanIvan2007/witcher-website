@@ -39,13 +39,29 @@ import { TranslationService } from '../services/translation.service';
       <p class="quote-author">— {{ tr.t('home.quoteAuthor') }}</p>
     </section>
 
+    <section class="characters-section">
+      <div class="container">
+        <h2 class="section-title">Главные <span>Персонажи</span></h2>
+        <div class="characters-grid">
+          @for (char of characters; track char.id) {
+            <div class="character-card">
+              <div class="character-image-wrapper">
+                <img [src]="char.image" [alt]="char.name">
+              </div>
+              <div class="character-info">
+                <div class="character-badge">{{ char.aka }}</div>
+                <h3>{{ char.name }}</h3>
+              </div>
+            </div>
+          }
+        </div>
+        <a routerLink="/characters" class="btn-cdpr">Все персонажи</a>
+      </div>
+    </section>
+
     <section class="quick-nav">
       <div class="container">
         <div class="quick-nav-grid">
-          <a routerLink="/characters" class="quick-nav-card">
-            <h3>{{ tr.t('nav.characters') }}</h3>
-            <p>Главные герои саги</p>
-          </a>
           <a routerLink="/schools" class="quick-nav-card">
             <h3>{{ tr.t('nav.schools') }}</h3>
             <p>Школы ведьмаков</p>
@@ -88,6 +104,20 @@ import { TranslationService } from '../services/translation.service';
     .quote-text { font-family: 'Oswald', sans-serif; font-size: 36px; font-style: italic; max-width: 900px; margin: 0 auto 30px; line-height: 1.4; }
     .quote-author { font-size: 18px; font-weight: 600; text-transform: uppercase; letter-spacing: 5px; }
 
+    .characters-section { background: #0a0a0a; padding: 100px 0; }
+    .section-title { font-family: 'Oswald', sans-serif; font-size: 48px; font-weight: 600; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 50px; text-align: center; }
+    .section-title span { color: #de1400; }
+    .characters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    .character-card { background: #1a1a1a; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; transition: all 0.4s; }
+    .character-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(222, 20, 0, 0.3); border-color: #de1400; }
+    .character-image-wrapper { height: 200px; overflow: hidden; }
+    .character-image-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .character-card:hover .character-image-wrapper img { transform: scale(1.1); }
+    .character-info { padding: 15px; text-align: center; }
+    .character-badge { display: inline-block; padding: 3px 8px; background: #de1400; font-family: 'Oswald', sans-serif; font-size: 8px; letter-spacing: 1px; margin-bottom: 5px; }
+    .character-info h3 { font-family: 'Oswald', sans-serif; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #fff; }
+    .characters-section .btn-cdpr { display: block; width: 200px; margin: 0 auto; text-align: center; }
+
     .quick-nav { background: #0a0a0a; padding: 100px 0; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
     .quick-nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
@@ -102,4 +132,12 @@ import { TranslationService } from '../services/translation.service';
 })
 export class HomeComponent {
   tr = inject(TranslationService);
+  characters = [
+    { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', image: 'assets/images/a5fb7a948cb613a6db1074e998684cc.jpg' },
+    { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', image: 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&h=500&fit=crop' },
+    { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', image: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop' },
+    { id: 4, name: 'Лютик', aka: 'БАРД', image: 'assets/images/i (8).webp' },
+    { id: 5, name: 'Эредін', aka: 'КРАСНЫЙ', image: 'assets/images/w1500_49118093.jpg' },
+    { id: 6, name: 'Трисс', aka: 'РЫЖАЯ', image: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=400&h=500&fit=crop' }
+  ];
 }
