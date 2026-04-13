@@ -47,6 +47,7 @@ import { Component } from '@angular/core';
     .character-stats strong { color: #de1400; }
   `]
 })
+// Witcher Characters - Updated
 export class CharactersComponent {
   characters = [
     { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', description: 'Беловолосый ведьмак из Школы Волка. Наёмный убийца чудовищ.', weapon: 'Стальной и Серебряный мечи', origin: 'Каэр Морхен', image: 'assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg' },
