@@ -60,7 +60,7 @@ export class GalleryComponent {
       { id: 3, name: this.tr.t('gallery.yennefer'), desc: this.tr.t('gallery.yenneferDesc'), url: 'assets/images/S600xU_2x (1).webp' },
       { id: 4, name: this.tr.t('gallery.wolfSchool'), desc: this.tr.t('gallery.wolfSchoolDesc'), url: 'assets/images/i (2).webp' },
       { id: 5, name: this.tr.t('gallery.kaerMorhen'), desc: this.tr.t('gallery.kaerMorhenDesc'), url: 'assets/images/i (3).webp' },
-      { id: 6, name: this.tr.t('gallery.novigrad'), desc: this.tr.t('gallery.novigradDesc'), url: 'assets/images/a652dcfff029f1f9f5e5e9bf06ee1622.jpg' },
+      { id: 6, name: this.tr.t('gallery.novigrad'), desc: this.tr.t('gallery.novigradDesc'), url: 'assets/images/S600xU_2x (2).webp' },
       { id: 7, name: this.tr.t('gallery.wildHunt'), desc: this.tr.t('gallery.wildHuntDesc'), url: 'assets/images/tw3wh-steelbook-skellige-back.webp' },
       { id: 8, name: this.tr.t('gallery.sword'), desc: this.tr.t('gallery.swordDesc'), url: 'assets/images/i (4).webp' }
     ];

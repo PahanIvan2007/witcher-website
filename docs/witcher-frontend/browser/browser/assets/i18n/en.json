@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "characters": "Characters",
+    "schools": "Schools",
+    "gallery": "Gallery",
+    "timeline": "History",
+    "games": "Games",
+    "gwent": "Gwent"
+  },
+  "home": {
+    "title": "THE WITCHER",
+    "subtitle": "A world ruled by monsters",
+    "quote": "\"Evil is not what needs to be killed, but what needs to be stopped.\"",
+    "quoteAuthor": "Geralt of Rivia",
+    "explore": "Explore"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "witcher": "Geralt of Rivia",
+    "witcherDesc": "Witcher - mutant, monster hunter",
+    "ciri": "Ciri",
+    "ciriDesc": "Daughter of Cintra, Lady of Space and Time, Lion of Cintra",
+    "yennefer": "Yennefer",
+    "yenneferDesc": "Sorceress from Aretuza, love of Geralt's life",
+    "wolfSchool": "Wolf School",
+    "wolfSchoolDesc": "The oldest witcher school",
+    "kaerMorhen": "Kaer Morhen",
+    "kaerMorhenDesc": "Witcher base - ancient fortress",
+    "novigrad": "Novigrad",
+    "novigradDesc": "Largest city in the Northern Kingdoms",
+    "wildHunt": "Wild Hunt",
+    "wildHuntDesc": "Riders of the Wild Hunt - ghosts of another world",
+    "sword": "Witcher Sword",
+    "swordDesc": "Steel and silver blades"
+  },
+  "footer": {
+    "tagline": "GOGOL' STUDIO 2026",
+    "copyright": "© 2026 CD PROJEKT RED. All rights reserved."
+  }
+}
