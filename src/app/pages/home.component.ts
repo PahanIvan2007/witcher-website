@@ -180,7 +180,7 @@ export class HomeComponent {
     { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', image: 'assets/images/SUx182_2x.webp' },
     { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', image: 'assets/images/i (10).webp' },
     { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', image: 'assets/images/i.webp' },
-    { id: 4, name: 'Лютик', aka: 'БАРД', image: 'assets/images/S600xU_2x.webp' },
+    { id: 4, name: 'Лютик', aka: 'БАРД', image: 'assets/images/S600xU_2x (1).webp' },
     { id: 5, name: 'Эредін', aka: 'КРАСНЫЙ', image: 'assets/images/a652dcfff029f1f9f5e5e9bf06ee1622.jpg' },
     { id: 6, name: 'Трисс', aka: 'РЫЖАЯ', image: 'assets/images/i (1).webp' }
   ];
