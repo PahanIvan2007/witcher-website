@@ -52,17 +52,18 @@ export class GalleryComponent {
   lightboxOpen = false;
   selectedImage: any = null;
 
+  v = '?v=2';
   getImages() {
     const lang = this.tr.currentLang();
     return [
-      { id: 1, name: this.tr.t('gallery.witcher'), desc: this.tr.t('gallery.witcherDesc'), url: 'assets/images/SUx182_2x.webp' },
-      { id: 2, name: this.tr.t('gallery.ciri'), desc: this.tr.t('gallery.ciriDesc'), url: 'assets/images/i (10).webp' },
-      { id: 3, name: this.tr.t('gallery.yennefer'), desc: this.tr.t('gallery.yenneferDesc'), url: 'assets/images/S600xU_2x (1).webp' },
-      { id: 4, name: this.tr.t('gallery.wolfSchool'), desc: this.tr.t('gallery.wolfSchoolDesc'), url: 'assets/images/i (2).webp' },
-      { id: 5, name: this.tr.t('gallery.kaerMorhen'), desc: this.tr.t('gallery.kaerMorhenDesc'), url: 'assets/images/i (3).webp' },
-      { id: 6, name: this.tr.t('gallery.novigrad'), desc: this.tr.t('gallery.novigradDesc'), url: 'assets/images/S600xU_2x (2).webp' },
-      { id: 7, name: this.tr.t('gallery.wildHunt'), desc: this.tr.t('gallery.wildHuntDesc'), url: 'assets/images/tw3wh-steelbook-skellige-back.webp' },
-      { id: 8, name: this.tr.t('gallery.sword'), desc: this.tr.t('gallery.swordDesc'), url: 'assets/images/i (4).webp' }
+      { id: 1, name: this.tr.t('gallery.witcher'), desc: this.tr.t('gallery.witcherDesc'), url: 'assets/images/SUx182_2x.webp' + this.v },
+      { id: 2, name: this.tr.t('gallery.ciri'), desc: this.tr.t('gallery.ciriDesc'), url: 'assets/images/i (10).webp' + this.v },
+      { id: 3, name: this.tr.t('gallery.yennefer'), desc: this.tr.t('gallery.yenneferDesc'), url: 'assets/images/S600xU_2x (1).webp' + this.v },
+      { id: 4, name: this.tr.t('gallery.wolfSchool'), desc: this.tr.t('gallery.wolfSchoolDesc'), url: 'assets/images/i (2).webp' + this.v },
+      { id: 5, name: this.tr.t('gallery.kaerMorhen'), desc: this.tr.t('gallery.kaerMorhenDesc'), url: 'assets/images/i (3).webp' + this.v },
+      { id: 6, name: this.tr.t('gallery.novigrad'), desc: this.tr.t('gallery.novigradDesc'), url: 'assets/images/S600xU_2x (2).webp' + this.v },
+      { id: 7, name: this.tr.t('gallery.wildHunt'), desc: this.tr.t('gallery.wildHuntDesc'), url: 'assets/images/tw3wh-steelbook-skellige-back.webp' + this.v },
+      { id: 8, name: this.tr.t('gallery.sword'), desc: this.tr.t('gallery.swordDesc'), url: 'assets/images/i (4).webp' + this.v }
     ];
   }
 
