@@ -177,7 +177,7 @@ import { TranslationService } from '../services/translation.service';
 export class HomeComponent {
   tr = inject(TranslationService);
   characters = [
-    { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', image: 'assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg' },
+    { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', image: 'assets/images/SUx182_2x.webp' },
     { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', image: 'assets/images/i (10).webp' },
     { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', image: 'assets/images/i.webp' },
     { id: 4, name: 'Лютик', aka: 'БАРД', image: 'assets/images/S600xU_2x.webp' },

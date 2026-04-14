@@ -67,7 +67,7 @@ export class CharactersComponent implements OnInit {
   hoveredId: number | null = null;
 
   characters = [
-    { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', description: 'Беловолосый ведьмак из Школы Волка. Наёмный убийца чудовищ.', weapon: 'Стальной и Серебряный мечи', origin: 'Каэр Морхен', image: 'assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg' },
+    { id: 1, name: 'Геральт из Ривии', aka: 'БЕЛОВОЛОСЫЙ', description: 'Беловолосый ведьмак из Школы Волка. Наёмный убийца чудовищ.', weapon: 'Стальной и Серебряный мечи', origin: 'Каэр Морхен', image: 'assets/images/SUx182_2x.webp' },
     { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', description: 'Принцесса Цинтры, носительница Elder Blood. Дочь Паветты.', weapon: 'Меч из Ласточки', origin: 'Цинтра', image: 'assets/images/i (10).webp' },
     { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', description: 'Чёрная чародейка. Одна из самых могущественных магов Севера.', weapon: 'Магия хаоса', origin: 'Аретуза', image: 'assets/images/i.webp' },
     { id: 4, name: 'Лютик', aka: 'БАРД', description: 'Поэт и друг Геральта. Лучший бард Севера.', weapon: 'Лютня', origin: 'Новиград', image: 'assets/images/S600xU_2x.webp' },
