@@ -67,7 +67,7 @@ import { TranslationService } from '../services/translation.service';
         <div class="quick-nav-grid">
           <a routerLink="/schools" class="quick-nav-card">
             <div class="card-image">
-              <img src="assets/images/w1500_49118093.jpg" alt="Schools">
+              <img src="assets/images/i.webp" alt="Schools">
               <div class="card-overlay"></div>
             </div>
             <div class="card-content">
@@ -77,7 +77,7 @@ import { TranslationService } from '../services/translation.service';
           </a>
           <a routerLink="/gallery" class="quick-nav-card">
             <div class="card-image">
-              <img src="assets/images/h280_39780019.jpg" alt="Gallery">
+              <img src="assets/images/i (10).webp" alt="Gallery">
               <div class="card-overlay"></div>
             </div>
             <div class="card-content">
@@ -181,7 +181,7 @@ export class HomeComponent {
     { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', image: 'assets/images/i (10).webp' },
     { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', image: 'assets/images/i.webp' },
     { id: 4, name: 'Лютик', aka: 'БАРД', image: 'assets/images/S600xU_2x.webp' },
-    { id: 5, name: 'Эредін', aka: 'КРАСНЫЙ', image: 'assets/images/w1500_49118093.jpg' },
+    { id: 5, name: 'Эредін', aka: 'КРАСНЫЙ', image: 'assets/images/a652dcfff029f1f9f5e5e9bf06ee1622.jpg' },
     { id: 6, name: 'Трисс', aka: 'РЫЖАЯ', image: 'assets/images/i (1).webp' }
   ];
 }

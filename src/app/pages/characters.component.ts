@@ -71,7 +71,7 @@ export class CharactersComponent implements OnInit {
     { id: 2, name: 'Цири', aka: 'ЛАСТОЧКА', description: 'Принцесса Цинтры, носительница Elder Blood. Дочь Паветты.', weapon: 'Меч из Ласточки', origin: 'Цинтра', image: 'assets/images/i (10).webp' },
     { id: 3, name: 'Йеннифер', aka: 'ЛЬВИЦА', description: 'Чёрная чародейка. Одна из самых могущественных магов Севера.', weapon: 'Магия хаоса', origin: 'Аретуза', image: 'assets/images/i.webp' },
     { id: 4, name: 'Лютик', aka: 'БАРД', description: 'Поэт и друг Геральта. Лучший бард Севера.', weapon: 'Лютня', origin: 'Новиград', image: 'assets/images/S600xU_2x.webp' },
-    { id: 5, name: 'Эредін', aka: 'КРАСНЫЙ', description: 'Король Дикой Охоты. Повелитель Мира Эльфов.', weapon: 'Звёздная Пыль', origin: 'Аэртудрассил', image: 'assets/images/w1500_49118093.jpg' },
+    { id: 5, name: 'Эредін', aka: 'КРАСНЫЙ', description: 'Король Дикой Охоты. Повелитель Мира Эльфов.', weapon: 'Звёздная Пыль', origin: 'Аэртудрассил', image: 'assets/images/a652dcfff029f1f9f5e5e9bf06ee1622.jpg' },
     { id: 6, name: 'Трисс', aka: 'РЫЖАЯ', description: 'Чародейка из Каэр Морхен. Советница короля Радовида.', weapon: 'Огненная магия', origin: 'Махакам', image: 'assets/images/i (1).webp' }
   ];
 
