@@ -66,19 +66,34 @@ import { TranslationService } from '../services/translation.service';
       <div class="container">
         <div class="quick-nav-grid">
           <a routerLink="/schools" class="quick-nav-card">
-            <div class="card-icon">⚔️</div>
-            <h3>{{ tr.t('nav.schools') }}</h3>
-            <p>Школы ведьмаков</p>
+            <div class="card-image">
+              <img src="assets/images/w1500_49118093.jpg" alt="Schools">
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <h3>{{ tr.t('nav.schools') }}</h3>
+              <p>Школы ведьмаков</p>
+            </div>
           </a>
           <a routerLink="/gallery" class="quick-nav-card">
-            <div class="card-icon">🖼️</div>
-            <h3>{{ tr.t('nav.gallery') }}</h3>
-            <p>Изображения и арты</p>
+            <div class="card-image">
+              <img src="assets/images/h280_39780019.jpg" alt="Gallery">
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <h3>{{ tr.t('nav.gallery') }}</h3>
+              <p>Изображения и арты</p>
+            </div>
           </a>
           <a routerLink="/gwent" class="quick-nav-card gwent-card">
-            <div class="card-icon">🃏</div>
-            <h3>{{ tr.t('nav.gwent') }}</h3>
-            <p>Карточная игра</p>
+            <div class="card-image">
+              <img src="assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg" alt="Gwent">
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <h3>{{ tr.t('nav.gwent') }}</h3>
+              <p>Карточная игра</p>
+            </div>
           </a>
         </div>
       </div>
@@ -140,18 +155,21 @@ import { TranslationService } from '../services/translation.service';
 
     .quick-nav { background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%); padding: 100px 0; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    .quick-nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .quick-nav-card { background: rgba(26, 26, 26, 0.9); border: 1px solid rgba(222, 20, 0, 0.3); padding: 40px 30px; text-align: center; text-decoration: none; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border-radius: 8px; }
-    .quick-nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #de1400, #ff4444); transform: scaleX(0); transition: transform 0.4s; }
+    .quick-nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .quick-nav-card { background: #1a1a1a; border: 1px solid rgba(222, 20, 0, 0.3); text-decoration: none; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border-radius: 8px; height: 250px; display: flex; flex-direction: column; }
+    .quick-nav-card::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #de1400, #ff4444); transform: scaleX(0); transition: transform 0.4s; z-index: 2; }
     .quick-nav-card:hover::before { transform: scaleX(1); }
-    .quick-nav-card:hover { background: rgba(222, 20, 0, 0.1); border-color: #de1400; transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 30px rgba(222, 20, 0, 0.2); }
+    .quick-nav-card:hover { border-color: #de1400; transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 40px rgba(222, 20, 0, 0.3); }
     .quick-nav-card.gwent-card { border-color: rgba(222, 20, 0, 0.5); }
-    .card-icon { font-size: 48px; margin-bottom: 15px; transition: transform 0.4s; }
-    .quick-nav-card:hover .card-icon { transform: scale(1.2) rotate(10deg); }
-    .quick-nav-card h3 { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px; color: #fff; transition: color 0.3s; }
-    .quick-nav-card:hover h3 { color: #de1400; }
-    .quick-nav-card p { font-size: 14px; color: rgba(255,255,255,0.6); transition: color 0.3s; }
-    .quick-nav-card:hover p { color: rgba(255,255,255,0.9); }
+    .card-image { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: grayscale(40%) brightness(0.6); }
+    .quick-nav-card:hover .card-image img { transform: scale(1.15); filter: grayscale(0%) brightness(0.8); }
+    .card-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 50%, transparent 100%); }
+    .card-content { position: relative; z-index: 1; padding: 20px; margin-top: auto; text-align: center; }
+    .card-content h3 { font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; color: #fff; transition: color 0.3s; }
+    .quick-nav-card:hover .card-content h3 { color: #de1400; }
+    .card-content p { font-size: 12px; color: rgba(255,255,255,0.6); transition: color 0.3s; }
+    .quick-nav-card:hover .card-content p { color: rgba(255,255,255,0.9); }
 
     @media (max-width: 992px) { .hero-title { font-size: 60px; letter-spacing: 10px; } }
   `]
