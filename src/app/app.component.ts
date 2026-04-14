@@ -104,11 +104,12 @@ import { TranslationService } from './services/translation.service';
 
     main { min-height: 100vh; }
 
-    footer { background: var(--cdpr-black); border-top: 1px solid rgba(255,255,255,0.1); padding: 60px 0 30px; }
-    .footer-content { display: flex; flex-direction: column; align-items: center; gap: 30px; }
-    .footer-logo { height: 50px; }
+    footer { background: linear-gradient(180deg, var(--cdpr-black) 0%, #050505 100%); border-top: 1px solid rgba(222,20,0,0.3); padding: 80px 0 40px; position: relative; overflow: hidden; }
+    footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #de1400, transparent); }
+    .footer-content { display: flex; flex-direction: column; align-items: center; gap: 30px; position: relative; z-index: 1; }
+    .footer-logo { height: 50px; filter: drop-shadow(0 0 20px rgba(222,20,0,0.3)); }
     .footer-tagline { font-family: 'Oswald', sans-serif; font-size: 12px; letter-spacing: 5px; color: rgba(255,255,255,0.4); margin-top: 10px; }
-    .footer-copyright { font-size: 12px; color: rgba(255,255,255,0.4); }
+    .footer-copyright { font-size: 12px; color: rgba(255,255,255,0.4); padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; text-align: center; }
 
     @media (max-width: 992px) {
       .mobile-menu-btn { display: block; }
