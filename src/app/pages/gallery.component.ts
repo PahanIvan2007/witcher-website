@@ -55,14 +55,14 @@ export class GalleryComponent {
   getImages() {
     const lang = this.tr.currentLang();
     return [
-      { id: 1, name: this.tr.t('gallery.witcher'), desc: this.tr.t('gallery.witcherDesc'), url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&h=300&fit=crop' },
-      { id: 2, name: this.tr.t('gallery.ciri'), desc: this.tr.t('gallery.ciriDesc'), url: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=400&h=300&fit=crop' },
-      { id: 3, name: this.tr.t('gallery.yennefer'), desc: this.tr.t('gallery.yenneferDesc'), url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop' },
-      { id: 4, name: this.tr.t('gallery.wolfSchool'), desc: this.tr.t('gallery.wolfSchoolDesc'), url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&h=300&fit=crop' },
-      { id: 5, name: this.tr.t('gallery.kaerMorhen'), desc: this.tr.t('gallery.kaerMorhenDesc'), url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop' },
-      { id: 6, name: this.tr.t('gallery.novigrad'), desc: this.tr.t('gallery.novigradDesc'), url: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=400&h=300&fit=crop' },
-      { id: 7, name: this.tr.t('gallery.wildHunt'), desc: this.tr.t('gallery.wildHuntDesc'), url: 'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=400&h=300&fit=crop' },
-      { id: 8, name: this.tr.t('gallery.sword'), desc: this.tr.t('gallery.swordDesc'), url: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=400&h=300&fit=crop' }
+      { id: 1, name: this.tr.t('gallery.witcher'), desc: this.tr.t('gallery.witcherDesc'), url: 'assets/images/SUx182_2x.webp' },
+      { id: 2, name: this.tr.t('gallery.ciri'), desc: this.tr.t('gallery.ciriDesc'), url: 'assets/images/i (10).webp' },
+      { id: 3, name: this.tr.t('gallery.yennefer'), desc: this.tr.t('gallery.yenneferDesc'), url: 'assets/images/S600xU_2x (1).webp' },
+      { id: 4, name: this.tr.t('gallery.wolfSchool'), desc: this.tr.t('gallery.wolfSchoolDesc'), url: 'assets/images/SUx182_2x.webp' },
+      { id: 5, name: this.tr.t('gallery.kaerMorhen'), desc: this.tr.t('gallery.kaerMorhenDesc'), url: 'assets/images/i.webp' },
+      { id: 6, name: this.tr.t('gallery.novigrad'), desc: this.tr.t('gallery.novigradDesc'), url: 'assets/images/a652dcfff029f1f9f5e5e9bf06ee1622.jpg' },
+      { id: 7, name: this.tr.t('gallery.wildHunt'), desc: this.tr.t('gallery.wildHuntDesc'), url: 'assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg' },
+      { id: 8, name: this.tr.t('gallery.sword'), desc: this.tr.t('gallery.swordDesc'), url: 'assets/images/S600xU_2x.webp' }
     ];
   }
 
