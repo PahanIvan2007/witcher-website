@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +15,12 @@ html, body {
 }
 
 body {
-  font-family: 'Rajdhani', sans-serif;
-  background: #000;
+  font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a0a;
   color: #fff;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -29,19 +33,24 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #050505;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #de1400;
+  background: linear-gradient(180deg, #de1400, #8B0000);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff2020;
+  background: linear-gradient(180deg, #ff2020, #de1400);
 }
 
 ::selection {
-  background: rgba(222, 20, 0, 0.5);
+  background: rgba(222, 20, 0, 0.6);
   color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid #de1400;
+  outline-offset: 2px;
 }
