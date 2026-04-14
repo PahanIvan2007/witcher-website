@@ -67,7 +67,7 @@ import { TranslationService } from '../services/translation.service';
         <div class="quick-nav-grid">
           <a routerLink="/schools" class="quick-nav-card">
             <div class="card-image">
-              <img src="assets/images/i.webp" alt="Schools">
+              <img src="assets/images/SUx182_2x.webp" alt="Schools">
               <div class="card-overlay"></div>
             </div>
             <div class="card-content">
@@ -77,7 +77,7 @@ import { TranslationService } from '../services/translation.service';
           </a>
           <a routerLink="/gallery" class="quick-nav-card">
             <div class="card-image">
-              <img src="assets/images/i (10).webp" alt="Gallery">
+              <img src="assets/images/SUx182_2x.webp" alt="Gallery">
               <div class="card-overlay"></div>
             </div>
             <div class="card-content">
@@ -87,7 +87,7 @@ import { TranslationService } from '../services/translation.service';
           </a>
           <a routerLink="/gwent" class="quick-nav-card gwent-card">
             <div class="card-image">
-              <img src="assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg" alt="Gwent">
+              <img src="assets/images/SUx182_2x.webp" alt="Gwent">
               <div class="card-overlay"></div>
             </div>
             <div class="card-content">
