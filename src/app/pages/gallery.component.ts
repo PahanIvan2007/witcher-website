@@ -58,7 +58,7 @@ export class GalleryComponent {
       { id: 1, name: this.tr.t('gallery.witcher'), desc: this.tr.t('gallery.witcherDesc'), url: 'assets/images/SUx182_2x.webp' },
       { id: 2, name: this.tr.t('gallery.ciri'), desc: this.tr.t('gallery.ciriDesc'), url: 'assets/images/i (10).webp' },
       { id: 3, name: this.tr.t('gallery.yennefer'), desc: this.tr.t('gallery.yenneferDesc'), url: 'assets/images/S600xU_2x (1).webp' },
-      { id: 4, name: this.tr.t('gallery.wolfSchool'), desc: this.tr.t('gallery.wolfSchoolDesc'), url: 'assets/images/SUx182_2x.webp' },
+      { id: 4, name: this.tr.t('gallery.wolfSchool'), desc: this.tr.t('gallery.wolfSchoolDesc'), url: 'assets/images/i (2).webp' },
       { id: 5, name: this.tr.t('gallery.kaerMorhen'), desc: this.tr.t('gallery.kaerMorhenDesc'), url: 'assets/images/i.webp' },
       { id: 6, name: this.tr.t('gallery.novigrad'), desc: this.tr.t('gallery.novigradDesc'), url: 'assets/images/a652dcfff029f1f9f5e5e9bf06ee1622.jpg' },
       { id: 7, name: this.tr.t('gallery.wildHunt'), desc: this.tr.t('gallery.wildHuntDesc'), url: 'assets/images/a5fb7a948cb613a6db107e4e998684cc.jpg' },
